@@ -208,7 +208,7 @@ using the ``queryParam`` option::
 
        // Add the authentication middleware
        $authentication = new AuthenticationMiddleware($this, [
-           'unauthenticatedRedirect' => Router::url('users:login'),
+           'unauthenticatedRedirect' => Router::url('/users/login'),
            'queryParam' => 'redirect',
        ]);
 
